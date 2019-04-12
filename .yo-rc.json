@@ -1,0 +1,38 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "br.com.sis.poc",
+            "nativeLanguage": "pt-br"
+        },
+        "jhipsterVersion": "5.8.2",
+        "applicationType": "monolith",
+        "baseName": "erp",
+        "packageName": "br.com.sis.poc",
+        "packageFolder": "br/com/sis/poc",
+        "serverPort": "8080",
+        "authenticationType": "jwt",
+        "cacheProvider": "ehcache",
+        "enableHibernateCache": true,
+        "websocket": "spring-websocket",
+        "databaseType": "sql",
+        "devDatabaseType": "h2Memory",
+        "prodDatabaseType": "mssql",
+        "searchEngine": "elasticsearch",
+        "messageBroker": false,
+        "serviceDiscoveryType": true,
+        "buildTool": "gradle",
+        "enableSwaggerCodegen": false,
+        "jwtSecretKey": "OGFlOTZkMTBiNWUwZDgyZWQzZDA3OTBhYTUyZTA2OGMyYjVhNzI3YTc5ZDdjNTRjNWZmMWExMDVjNTkzOWNkNDlkZTI2ZDQzMWMxMGVhNzNjZDJjNTNiZGNmZTUyN2EyZjU4Nzk3ZDY1NDY0NmZiZjFiNjdiMGIxYzgyYTkzNTU=",
+        "clientFramework": "angularX",
+        "useSass": true,
+        "clientPackageManager": "npm",
+        "testFrameworks": ["cucumber", "protractor"],
+        "jhiPrefix": "jhi",
+        "entitySuffix": "",
+        "dtoSuffix": "DTO",
+        "otherModules": [],
+        "enableTranslation": true,
+        "nativeLanguage": "pt-br",
+        "languages": ["pt-br", "zh-tw", "en", "fr", "de", "it", "ja"]
+    }
+}
