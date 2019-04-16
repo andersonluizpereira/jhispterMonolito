@@ -1,0 +1,36 @@
+{
+    "erpApp": {
+        "addressDto": {
+            "home": {
+                "title": "Address Dtos",
+                "createLabel": "Criar novo Address Dto",
+                "createOrEditLabel": "Criar ou editar Address Dto",
+                "search": "Pesquisar por Address Dto"
+            },
+            "created": "Um novo Address Dto foi criado com o identificador {{ param }}",
+            "updated": "Um Address Dto foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Address Dto foi deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Address Dto {{ id }}?"
+            },
+            "detail": {
+                "title": "Address Dto"
+            },
+            "addressName": "Address Name",
+            "addressType": "Address Type",
+            "city": "City",
+            "complement": "Complement",
+            "country": "Country",
+            "countryfake": "Countryfake",
+            "geoCoordinate": "Geo Coordinate",
+            "neighborhood": "Neighborhood",
+            "number": "Number",
+            "postalCode": "Postal Code",
+            "receiverName": "Receiver Name",
+            "reference": "Reference",
+            "state": "State",
+            "street": "Street",
+            "enterpriseid": "Enterpriseid"
+        }
+    }
+}

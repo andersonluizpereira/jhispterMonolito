@@ -1,0 +1,36 @@
+{
+    "erpApp": {
+        "addressDto": {
+            "home": {
+                "title": "Address Dtos",
+                "createLabel": "Address Dto erstellen",
+                "createOrEditLabel": "Address Dto erstellen oder bearbeiten",
+                "search": "Suche nach Address Dto"
+            },
+            "created": "Address Dto erstellt mit ID {{ param }}",
+            "updated": "Address Dto aktualisiert mit ID {{ param }}",
+            "deleted": "Address Dto gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Address Dto {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Address Dto"
+            },
+            "addressName": "Address Name",
+            "addressType": "Address Type",
+            "city": "City",
+            "complement": "Complement",
+            "country": "Country",
+            "countryfake": "Countryfake",
+            "geoCoordinate": "Geo Coordinate",
+            "neighborhood": "Neighborhood",
+            "number": "Number",
+            "postalCode": "Postal Code",
+            "receiverName": "Receiver Name",
+            "reference": "Reference",
+            "state": "State",
+            "street": "Street",
+            "enterpriseid": "Enterpriseid"
+        }
+    }
+}

@@ -1,0 +1,83 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="addressDto">
+            <h2><span jhiTranslate="erpApp.addressDto.detail.title">Address Dto</span> {{addressDto.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="erpApp.addressDto.addressName">Address Name</span></dt>
+                <dd>
+                    <span>{{addressDto.addressName}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.addressType">Address Type</span></dt>
+                <dd>
+                    <span>{{addressDto.addressType}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.city">City</span></dt>
+                <dd>
+                    <span>{{addressDto.city}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.complement">Complement</span></dt>
+                <dd>
+                    <span>{{addressDto.complement}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.country">Country</span></dt>
+                <dd>
+                    <span>{{addressDto.country}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.countryfake">Countryfake</span></dt>
+                <dd>
+                    <span>{{addressDto.countryfake}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.geoCoordinate">Geo Coordinate</span></dt>
+                <dd>
+                    <span>{{addressDto.geoCoordinate}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.neighborhood">Neighborhood</span></dt>
+                <dd>
+                    <span>{{addressDto.neighborhood}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.number">Number</span></dt>
+                <dd>
+                    <span>{{addressDto.number}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.postalCode">Postal Code</span></dt>
+                <dd>
+                    <span>{{addressDto.postalCode}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.receiverName">Receiver Name</span></dt>
+                <dd>
+                    <span>{{addressDto.receiverName}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.reference">Reference</span></dt>
+                <dd>
+                    <span>{{addressDto.reference}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.state">State</span></dt>
+                <dd>
+                    <span>{{addressDto.state}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.street">Street</span></dt>
+                <dd>
+                    <span>{{addressDto.street}}</span>
+                </dd>
+                <dt><span jhiTranslate="erpApp.addressDto.enterpriseid">Enterpriseid</span></dt>
+                <dd>
+                    <span>{{addressDto.enterpriseid}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/address-dto', addressDto.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

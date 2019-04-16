@@ -1,0 +1,36 @@
+{
+    "erpApp": {
+        "addressDto": {
+            "home": {
+                "title": "AddressDtos",
+                "createLabel": "Address Dto を追加",
+                "createOrEditLabel": "Address Dtoを追加または編集",
+                "search": "Search for Address Dto"
+            },
+            "created": "A new Address Dto is created with identifier {{ param }}",
+            "updated": "A Address Dto is updated with identifier {{ param }}",
+            "deleted": "A Address Dto is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Address Dto {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Address Dto"
+            },
+            "addressName": "Address Name",
+            "addressType": "Address Type",
+            "city": "City",
+            "complement": "Complement",
+            "country": "Country",
+            "countryfake": "Countryfake",
+            "geoCoordinate": "Geo Coordinate",
+            "neighborhood": "Neighborhood",
+            "number": "Number",
+            "postalCode": "Postal Code",
+            "receiverName": "Receiver Name",
+            "reference": "Reference",
+            "state": "State",
+            "street": "Street",
+            "enterpriseid": "Enterpriseid"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "erpApp": {
+        "addressDto": {
+            "home": {
+                "title": "Address Dtos",
+                "createLabel": "建立一筆新的 Address Dto",
+                "createOrEditLabel": "建立或編輯 Address Dto",
+                "search": "搜尋 Address Dto"
+            },
+            "created": "新的 Address Dto 建立成功，識別碼為 {{ param }}",
+            "updated": "識別碼為 {{ param }} 的 Address Dto 更新成功",
+            "deleted": "識別碼為 {{ param }} 的 Address Dto 刪除成功",
+            "delete": {
+                "question": "您確定要刪除 Address Dto {{ id }} 嗎?"
+            },
+            "detail": {
+                "title": "Address Dto"
+            },
+            "addressName": "Address Name",
+            "addressType": "Address Type",
+            "city": "City",
+            "complement": "Complement",
+            "country": "Country",
+            "countryfake": "Countryfake",
+            "geoCoordinate": "Geo Coordinate",
+            "neighborhood": "Neighborhood",
+            "number": "Number",
+            "postalCode": "Postal Code",
+            "receiverName": "Receiver Name",
+            "reference": "Reference",
+            "state": "State",
+            "street": "Street",
+            "enterpriseid": "Enterpriseid"
+        }
+    }
+}

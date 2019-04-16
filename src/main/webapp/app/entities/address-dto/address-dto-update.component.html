@@ -1,0 +1,99 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-address-dto-heading" jhiTranslate="erpApp.addressDto.home.createOrEditLabel">Create or edit a Address Dto</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!addressDto.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="addressDto.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.addressName" for="field_addressName">Address Name</label>
+                    <input type="text" class="form-control" name="addressName" id="field_addressName"
+                        [(ngModel)]="addressDto.addressName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.addressType" for="field_addressType">Address Type</label>
+                    <input type="text" class="form-control" name="addressType" id="field_addressType"
+                        [(ngModel)]="addressDto.addressType" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.city" for="field_city">City</label>
+                    <input type="text" class="form-control" name="city" id="field_city"
+                        [(ngModel)]="addressDto.city" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.complement" for="field_complement">Complement</label>
+                    <input type="text" class="form-control" name="complement" id="field_complement"
+                        [(ngModel)]="addressDto.complement" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.country" for="field_country">Country</label>
+                    <input type="text" class="form-control" name="country" id="field_country"
+                        [(ngModel)]="addressDto.country" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.countryfake" for="field_countryfake">Countryfake</label>
+                    <input type="text" class="form-control" name="countryfake" id="field_countryfake"
+                        [(ngModel)]="addressDto.countryfake" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.geoCoordinate" for="field_geoCoordinate">Geo Coordinate</label>
+                    <input type="text" class="form-control" name="geoCoordinate" id="field_geoCoordinate"
+                        [(ngModel)]="addressDto.geoCoordinate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.neighborhood" for="field_neighborhood">Neighborhood</label>
+                    <input type="text" class="form-control" name="neighborhood" id="field_neighborhood"
+                        [(ngModel)]="addressDto.neighborhood" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.number" for="field_number">Number</label>
+                    <input type="text" class="form-control" name="number" id="field_number"
+                        [(ngModel)]="addressDto.number" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.postalCode" for="field_postalCode">Postal Code</label>
+                    <input type="text" class="form-control" name="postalCode" id="field_postalCode"
+                        [(ngModel)]="addressDto.postalCode" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.receiverName" for="field_receiverName">Receiver Name</label>
+                    <input type="text" class="form-control" name="receiverName" id="field_receiverName"
+                        [(ngModel)]="addressDto.receiverName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.reference" for="field_reference">Reference</label>
+                    <input type="text" class="form-control" name="reference" id="field_reference"
+                        [(ngModel)]="addressDto.reference" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.state" for="field_state">State</label>
+                    <input type="text" class="form-control" name="state" id="field_state"
+                        [(ngModel)]="addressDto.state" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.street" for="field_street">Street</label>
+                    <input type="text" class="form-control" name="street" id="field_street"
+                        [(ngModel)]="addressDto.street" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="erpApp.addressDto.enterpriseid" for="field_enterpriseid">Enterpriseid</label>
+                    <input type="text" class="form-control" name="enterpriseid" id="field_enterpriseid"
+                        [(ngModel)]="addressDto.enterpriseid" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

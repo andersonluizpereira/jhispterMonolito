@@ -35,6 +35,10 @@ import { RouterModule } from '@angular/router';
             {
                 path: 'job-history',
                 loadChildren: './job-history/job-history.module#ErpJobHistoryModule'
+            },
+            {
+                path: 'address-dto',
+                loadChildren: './address-dto/address-dto.module#ErpAddressDtoModule'
             }
             /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
         ])
